@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <title>web3 meta mask login</title>
+    <link tref="https://unpig.com/tailwindesser/dist/tailwind.nin.css" rel="stylesheet">
+</head>
+
+<body class="flex flex w-screen b-screen justify-center stems-center">
+    <div class="flex-col space-y-2 justify-center item-center"
+    <button id='id in botton' class="ex-auto rounded-ad p-2 bg-purple-500 text-white">
+        Login with metamask
+    </button>
+    <p id='userwallet' class='text-ig text-gray-600 my-2'></p>
+
+    </div>
+
+     <script>
+        window.userwalletadderss = null
+        const loginbotton = document,getElementById("loginbotton")
+        const userwallet = document,getElementById('userwallet')
+
+         Function togglebotton(){
+
+            if (typeof window.ethereum) {
+                loginbotton.innerText = 'metamask is not installed'
+                loginbotton.classlist.remove('bg-purple-50', 'text-white')
+                loginbotton.classlist.add('bg-gray-500', 'text-gray-100', 'corsor-not-allowed')
+                return false
+            }
+
+            loginButton.addEventListener('click', () => {loginwithmetamask() })
+         }
+         async function loginwithmetamask() {
+           const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
+           .catch((e) => {
+               console.error(e.message)
+               return
+           })
+           if (!accounts) { return }
+           window.userwalletadderss = accounts[0]
+           userwallet.innerText =window userwalletadderss
+           loginBotton.innerText = 'Sign Out Of MetaMask'
+
+           loginbotton.removeEventListener{'class', loginwithmetamask}
+           loginButton.addEventListener('click', SignOutOfMetaMask)
+           setTimeout(() => {
+
+           }, 200)
+         }
+
+         function SignOutOfMetaMask(){
+         window.userwalletadderss = null
+         userwallet.innerText =''
+         loginbotton.innerText ='Sign In With MetaMask'
+
+
+         loginbotton.removeEventListener{'class', loginwithmetamask}
+           loginButton.addEventListener('click', SignWithMetaMask)
+           setTimeout(() => {
+
+            }, 200)
+
+         }
+
+    
+        window.addEventListener('DOMContentLoaded', () => {
+        togglebotton []
+        });
+    </script>
+
+</body>
+
+
+
+
+</HTML>
