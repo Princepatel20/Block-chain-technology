@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <!-- <link href="https://fonts.googleeapis.com/css?famaily=Bree+Serif&display=swap" rel="stylesheet"> -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        .navigation {
+            /* font-family: 'Bree Serif', serif; */
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            height: 344px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* section::after{
+            content:"this is a content";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <u1 class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Seevices</li>
+                <li class="item">Contect us</li>
+            </u1>
+        </nav>
+    </header>
+    <section>
+        <h1> Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione corporis totam delectus iure
+            consequatur fuga excepturi at laborum, similique error iste mollitia, nemo molestias quidem a odio odit,
+            expedita quis repellendus. Dolores, placeat autem.</p>
+    </section>
+    <hr>
+</body>
+
+</html>
