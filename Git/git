@@ -7,7 +7,15 @@ git commit
 touch contact.html
 git add -A
 git commit -m "Added more htmls"
-git checkout contact.html
+git checkout filename  #recover file data
 git checkout-f
 git log
 git log -p -1
+git diff
+git diff --staged
+ls  #see your file
+git commit -a -m "Adding waste". #Removing waste
+git rm --cached filename  #delete
+git status -s
+touch .gitignore
+touch mylogs.txt
