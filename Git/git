@@ -8,3 +8,6 @@ touch contact.html
 git add -A
 git commit -m "Added more htmls"
 git checkout contact.html
+git checkout-f
+git log
+git log -p -1
