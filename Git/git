@@ -1,0 +1,10 @@
+Code .
+git init
+ls -init
+git status
+git add index.html
+git commit
+touch contact.html
+git add -A
+git commit -m "Added more htmls"
+git checkout contact.html
